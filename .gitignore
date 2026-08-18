@@ -1,0 +1,10 @@
+# Build output
+/claude-menu
+/claude-menu.exe
+/dist/
+
+# OS cruft
+.DS_Store
+
+# Editor
+.vscode/

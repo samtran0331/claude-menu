@@ -5,12 +5,15 @@ TUI agent selector for claude
 ## Install (users)
 
 Prebuilt binaries for macOS and Windows are published on the GitHub Releases page.
-Replace `OWNER/claude-menu` with the actual repo (or set `CLAUDE_MENU_REPO`).
+
+> Note: the repo is currently **private**, so the `curl … | sh` / `irm … | iex`
+> one-liners below won't work until it's made public (they fetch raw script files
+> anonymously). Until then, clone the repo and run the scripts locally.
 
 ### macOS
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/OWNER/claude-menu/main/scripts/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/samtran0331/claude-menu/main/scripts/install.sh | sh
 ```
 
 Installs to `/usr/local/bin` (or `~/.local/bin` if that isn't writable). Then run:
@@ -27,7 +30,7 @@ macOS Gatekeeper may block an unsigned binary on first run. If so:
 In PowerShell:
 
 ```powershell
-irm https://raw.githubusercontent.com/OWNER/claude-menu/main/scripts/install.ps1 | iex
+irm https://raw.githubusercontent.com/samtran0331/claude-menu/main/scripts/install.ps1 | iex
 ```
 
 Installs to `%LOCALAPPDATA%\Programs\claude-menu` and adds it to your user PATH.

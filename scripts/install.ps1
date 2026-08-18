@@ -1,11 +1,11 @@
 # claude-menu installer for Windows (PowerShell).
 # Usage:
-#   irm https://raw.githubusercontent.com/OWNER/claude-menu/main/scripts/install.ps1 | iex
+#   irm https://raw.githubusercontent.com/samtran0331/claude-menu/main/scripts/install.ps1 | iex
 # Override the source repo or version:
-#   $env:CLAUDE_MENU_REPO="OWNER/claude-menu"; $env:VERSION="v1.0.0"; ./install.ps1
+#   $env:CLAUDE_MENU_REPO="samtran0331/claude-menu"; $env:VERSION="v1.0.0"; ./install.ps1
 $ErrorActionPreference = "Stop"
 
-$repo = if ($env:CLAUDE_MENU_REPO) { $env:CLAUDE_MENU_REPO } else { "OWNER/claude-menu" }
+$repo = if ($env:CLAUDE_MENU_REPO) { $env:CLAUDE_MENU_REPO } else { "samtran0331/claude-menu" }
 $version = if ($env:VERSION) { $env:VERSION } else { "latest" }
 $binary = "claude-menu"
 

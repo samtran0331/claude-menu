@@ -1,12 +1,12 @@
 #!/usr/bin/env sh
 # claude-menu installer for macOS / Linux.
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/OWNER/claude-menu/main/scripts/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/samtran0331/claude-menu/main/scripts/install.sh | sh
 # Override the source repo or version:
-#   CLAUDE_MENU_REPO=OWNER/claude-menu VERSION=v1.0.0 sh install.sh
+#   CLAUDE_MENU_REPO=samtran0331/claude-menu VERSION=v1.0.0 sh install.sh
 set -eu
 
-REPO="${CLAUDE_MENU_REPO:-OWNER/claude-menu}"
+REPO="${CLAUDE_MENU_REPO:-samtran0331/claude-menu}"
 VERSION="${VERSION:-latest}"
 BINARY="claude-menu"
 
